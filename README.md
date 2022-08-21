@@ -1,2 +1,1 @@
-# CN_JAVA
-Introduction
+Coding Ninjas JAVA
