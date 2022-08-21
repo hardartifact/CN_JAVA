@@ -1,6 +1,4 @@
- Average Marks
-Send Feedback
-Write a program to input a name(as a single character) and marks of three tests as m1, m2, and m3 of a student considering all the three marks have been given in integer format.
+/* Write a program to input a name(as a single character) and marks of three tests as m1, m2, and m3 of a student considering all the three marks have been given in integer format.
 Now, you need to calculate the average of the given marks and print it along with the name as mentioned in the output format section.
 All the test marks are in integers and hence calculate the average in integer as well. That is, you need to print the integer part of the average only and neglect the decimal part.
 Input format :
@@ -36,34 +34,26 @@ Sample Output 2 :
 
 T
 6
-
-Solution
-
+*/
 
 import java.util.Scanner;
 public class Solution {
-
-
+	
 	public static void main(String[] args) {
-		
-		/* Your class should be named Solution.
-	 	* Read input as specified in the question.
-	 	* Print output as specified in the question.
-		*/
-
-		Scanner s = new Scanner(System.in);
-        String nam1 = s.next();
-        char ch = nam1.charAt(0);
+	
+	Scanner s = new Scanner(System.in);  //command to allow input from the user
+        String name1 = s.next();   //Name of the student to be input by the user
+        char ch = name1.charAt(0);   //Taking first character of the name
         
-        int m1, m2, m3;
+        int s1, s2, s3; //Defined three integers as marks for each subject
         
-        m1 = s.nextInt();
-        m2 = s.nextInt();
-        m3 = s.nextInt();
+        s1 = s.nextInt(); //first subject marks to be input by the user
+        s2 = s.nextInt();  //second subject marks to be input by the user
+        s3 = s.nextInt();  //first subject marks to be input by the user
         
-        int Avg = (m1+m2+m3)/3;
-        System.out.println(ch);
-        System.out.println(Avg);
+        int Avg = (s1+s2+s3)/3; //Formula to calculate average
+        System.out.println(name1); //print first charcter of the name
+        System.out.println(Avg);  //print average of three subjects
 	}
-
+	
 }
